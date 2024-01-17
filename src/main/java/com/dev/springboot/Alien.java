@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope(value="prototype")
+@Scope(value="prototype") // helps to create more than one object using getBean
 public class Alien {
     private int aid;
     private String aname;
